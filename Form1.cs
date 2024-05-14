@@ -21,7 +21,7 @@ namespace 倒數計時器
         private void Timer1_Tick(object sender, EventArgs e)
         {
             now--;
-            if (now == 0)
+            if (now == 0)     //時間為0的時候跑出視窗顯示時間到
             { 
                 timer.Stop();
                 MessageBox.Show("TIME'S UP!!");
@@ -31,7 +31,7 @@ namespace 倒數計時器
         }
         private void start_Click(object sender, EventArgs e)
         {
-            timer.Start();
+            timer.Start();    // 開始倒數
         }
 
         
